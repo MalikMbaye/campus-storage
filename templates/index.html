@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends "base.html" %}
+{% block content %}
+
+<body data-spy="scroll">
+        <section class="intro-section video-section" id="welcome">
+            <div class="overlay"></div>
+            <div class="video-overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 col-md-offset-1 col-sm-12">
+                        <div class="intro_text">
+                            <h1>Easy, Safe, & Affordable Storage</h1>
+                            <p> </p>
+                            <div class="buttons scroll-to">
+                                <a href="#promo" class="btn btn-lg btn-light-dark ">Learn More <i class="fa fa-angle-down"></i></a>
+                                <a href="#store" class="btn btn-lg btn-skin ">Store Your Items <i class="fa fa-dropbox"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="aside_section">
+        <section id="services-bg-wrap">
+                <div class="row">
+               <div data-aos="fade-left" data-aos-duration="900">
+                
+                <div class="col-md-6">
+                    
+                        <img src="http://www.weleski.com/wp-content/uploads/2016/08/Girl-moving-into-dorm-1030x685.jpg" alt="" class="img-responsive">
+                    </div>
+                    </div>
+                    <div data-aos="fade-right" data-aos-duration="900">
+                    <div class="col-md-6 service-3-meta">
+                            <a name="about">
+                            <div class="aside_features">
+                            <h4>For <span class="colored-text">Students</span>.
+                            By <span class="colored-text">Students</span>.
+                            </h4>
+                             </div>
+                            </a>
+                        <div class="services-box margin30">
+                            <div class="services-box-icon">
+                                <i class="fa fa-usd"></i>
+                            </div> <!-- services icon -->
+                            <div class="services-box-info">
+                                <h4>Best Price Guarantee</h4>
+                               
+                                <p>
+                                    <strong> Get the best price in the game with our <span class="colored-text">Summer 2017 Special:</span>
+                                    <i>A TV, A Mini-Fridge, A Microwave, 4 Boxes, A Mirror, and A Bag, for <a href ="#promo"><span class="colored-text">$60/Month</span></strong></a></i>
+                                </strong>
+                                </p>
+                            </div>
+                            <br><br><br>
+                            </div>
+                        <div class="services-box margin30">
+                            <div class="services-box-icon">
+                                <i class="fa fa-lock"></i>
+                            </div><!--services icon-->
+                            <div class="services-box-info">
+                                <h4>Easy & Secure</h4>
+                                
+                                <p>
+                                    <strong>
+                                    Say Hello to Stress-Free Summer Storage. Just submit your <a href="#store">Storage Request</a>
+                                    and we'll pick up, store, deliver, and insure your items, we'll even provide packing materials!
+                                </strong>
+                                </p>
+                            </div>
+                            <br><br><br>
+                        </div><!--service box-->
+                          <div class="services-box margin30">
+                            <div class="services-box-icon">
+                                <i class="fa fa-handshake-o"></i>
+                            </div><!--services icon-->
+                            <div class="services-box-info">
+                                <h4>Community Based</h4>
+                                
+                                <p>
+                                    <strong>
+                                   Founded by two local HBCU Students who were tired of struggling to find easy and affordable storage.
+                                   <a href="{{ url_for('about') }}">Read Our Story...</a>
+                                   </strong>
+                                </p>
+                            </div>
+                        </div><!--service box-->
+                        
+                </div>
+                </div>
+            </div>
+            </div>
+        </section><!--services with the showcase mockups-->
+        <!-- End of copied code -->
+        
+        </section>
+        
+        <section class="promo text-center" id="promo">
+                <div class="section_heading">
+                    <h3>Take Advantage of Our Limited Time Offer!</h3>
+                    <hr class="separator">
+                    <p>Enter Code: BEARS on your Storage Request</p>
+                </div> 
+                <img src="{{ url_for('static', filename='images/banner1.png') }}" width="1043" height="417" align="center">
+        </section>
+                <!-- How It Works Code start -->
+                <!-- -->
+        <section>
+            <div class="section_heading">
+                    <h3>How it Works</h3>
+                    <hr class="separator">
+                    <br><br><br>
+        <div class="row special-feature">
+                <div data-aos="fade-right" data-aos-duration="600">
+                <div class="col-md-3">
+                    <div class="s-feature-box text-center">
+                        <div class="mask-top">
+                            <!-- Icon -->
+                            <i class="fa fa-pencil-square-o"></i>
+                            <!-- Title -->
+                            <h4>1. Sign Up</h4>
+                        </div>
+                        <div class="mask-bottom">
+                            <!-- Title -->
+                            <h4>Request Storage</h4>
+                            <!-- Text -->
+                            <br/><br/>
+                            <p>Submit a 1-minute <a href="#store"> Storage Rquest</a> outling how much stuff you have,
+                            how many boxes you need, and your pickup/dropoff dates. And we'll send you a secured Paypal invoice.</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+    <div data-aos="fade-right" data-aos-offset="100" data-aos-duration="650">
+    <div class="col-md-1 arrowhide">
+        <div class="responsive-container">
+        <div class="dummy"></div>
+        <div class="img-container">
+            <div class="centerer"></div>
+            <img src="https://lh3.googleusercontent.com/aafb3F7HJrKqvAYaH_e4CfbGNtJnlEFexkx45m7hyeUqwlIo46nB3U1nnpslf97KgFlRGENM7KlnS653q_9weEca8ojLBEZyYy-wIJ-6J7c8y-9OzrJUO77c6x2n7O1zOcr85e5JPp-gD2zyY5V0ZC7uEm-x9AgziZRB3763JBcYET1IMicSi8b6CUVlU3crtPEh5jIhjXxrQ2fpSEuYVWcLc_HWUSrvECmbWfbwZD7vJ5tYfqV-vkuXtRdkVMjAUpzhAWXZqTIDVEQtoFjM4iLu_7lWWdaGjxs87eXbqlSae6Hx5AS7YQ3Po-sU6bNiELVlsNSfWvmvWTjsxQdAQBB4APmQ5wG_b6LduUe7y4z_HJj60958B2zjflBZf0iGzn1QyhuAsK6HOIPWbHJWrLI8OG_xBnf8JeXDpXDyqEzCmHeLeavc_CTahd9YaBAREeI5FVbAjCdWWzom3pS02d7L6nAA0Rx7BRjSZhgT0qtB2BQHspzKlmCW2vwStvL-3k21d9dUyEFoGfpyavFIQekWMHBR8DOGSVsQaDi70_s8AIITDmDjRk27eGQsQVbF-0Odwm9ehxp-ZqvxIZvInrTqZHo9b4xZdoLi9l7EsqIs59-4JaaB-N1D8QMlp5-45p3L4Oth7GiamW4C-3J7Y2aNVnxHPCuFmktoX7HhGg=w89-h27-no" alt=""/>
+        </div>
+        <div class="dummy"></div>
+        </div>
+        </div>
+        </div>
+                <!--services col-->
+                <div data-aos="fade-right" data-aos-offset="200" data-aos-duration="750">
+                <div class="col-md-3">
+                    <div class="s-feature-box text-center">
+                        <div class="mask-top">
+                            <!-- Icon -->
+                            <i class="fa fa-dropbox"></i>
+                            <!-- Title -->
+                            <h4>2. Pack Up</h4>
+                        </div>
+                        <div class="mask-bottom">
+                            <!-- Title -->
+                            <h4>Need Help Packing?</h4>
+                            <!-- Text -->
+                            <br/><br/>
+                            <p>We'll hand-deliver packing materials, boxes, and even tape straight to your door. And deliver it to our local facility to store.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+    <div data-aos="fade-right" data-aos-offset="300" data-aos-duration="800">
+                        <div class="col-md-1 arrowhide">
+                            <div class="responsive-container">
+                            <div class="dummy"></div>
+                            <div class="img-container">
+                                <div class="centerer"></div>
+                                <img src="https://lh3.googleusercontent.com/aafb3F7HJrKqvAYaH_e4CfbGNtJnlEFexkx45m7hyeUqwlIo46nB3U1nnpslf97KgFlRGENM7KlnS653q_9weEca8ojLBEZyYy-wIJ-6J7c8y-9OzrJUO77c6x2n7O1zOcr85e5JPp-gD2zyY5V0ZC7uEm-x9AgziZRB3763JBcYET1IMicSi8b6CUVlU3crtPEh5jIhjXxrQ2fpSEuYVWcLc_HWUSrvECmbWfbwZD7vJ5tYfqV-vkuXtRdkVMjAUpzhAWXZqTIDVEQtoFjM4iLu_7lWWdaGjxs87eXbqlSae6Hx5AS7YQ3Po-sU6bNiELVlsNSfWvmvWTjsxQdAQBB4APmQ5wG_b6LduUe7y4z_HJj60958B2zjflBZf0iGzn1QyhuAsK6HOIPWbHJWrLI8OG_xBnf8JeXDpXDyqEzCmHeLeavc_CTahd9YaBAREeI5FVbAjCdWWzom3pS02d7L6nAA0Rx7BRjSZhgT0qtB2BQHspzKlmCW2vwStvL-3k21d9dUyEFoGfpyavFIQekWMHBR8DOGSVsQaDi70_s8AIITDmDjRk27eGQsQVbF-0Odwm9ehxp-ZqvxIZvInrTqZHo9b4xZdoLi9l7EsqIs59-4JaaB-N1D8QMlp5-45p3L4Oth7GiamW4C-3J7Y2aNVnxHPCuFmktoX7HhGg=w89-h27-no" alt="" />
+                            </div>
+                            <div class="dummy"></div>
+                            </div>
+                            </div>
+        </div>
+                <!--services col-->
+                <div data-aos="fade-right" data-aos-offset="400" data-aos-duration="1050">
+                <div class="col-md-3 col-sm-6">
+                    <div class="s-feature-box text-center">
+                        <div class="mask-top">
+                            <!-- Icon -->
+                            <i class="fa fa-truck icon-rotate icon-flipped"></i>
+                            <!-- Title -->
+                            <h4>3. Let Us Do The Rest</h4>
+                        </div>
+                        <div class="mask-bottom">
+                            <!-- Title -->
+                            <h4>Enjoy Your Summer!</h4>
+                            <!-- Text -->
+                            <br/><br/>
+                            <p>Your belongings will be stored within 10mi of your campus, and completely insured at no extra cost. 
+                            And we'll be sure to deliver everything at the start of the next semester</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+               
+                <!--services col-->
+                <!--services col-->
+            </div>
+            
+                <!-- How It Works Code end -->
+        </section>
+
+        <!--screen-shots section end-->
+        <!--team-->
+        <section id="store" class="download-section">
+            <div class="container">
+                <div class="section_heading">
+                    <h3>Submit Storage Request</h3>
+                    <hr class="separator">
+                    <p>Still have questions? Check out our <a href="{{ url_for('faq') }}">Frequently Asked Questions</a></p>
+                </div>
+                <div class="row">
+                    <div class="typeform-widget" data-url="https://malikmbaye.typeform.com/to/OcZvog" style="width: 100%; height: 750px;"></div>
+                    <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;">
+                </div>
+            </div>
+        </section>
+        {% endblock %}
+        
+{% block js %}
+  <script src="{{ url_for('static', filename='video-background/core.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='video-background/transition.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='video-background/background.js') }}"></script>
+        <script>
+            // Formstone Background - Video Background Settings
+            $(".video-section").background({
+                source: {
+                    poster: "https://lh3.googleusercontent.com/srMa7cTF2bwT0WPvnN38uABfrJD5ajVF9xqIH-vL08_vtpsFu6HI5QxKXzRccMyMuznrwFUlfWvbLJtXT-z-1G8CjKiJjl5n4bXZmf9P3p_LmEEWq4Pu3S1qn6FGXaZpDOYQbw=w1280-h800-no",
+                    mp4: "{{ url_for('static', filename='images/MDCS1.mp4') }}"
+                }
+            });
+        </script>
+{% endblock %}
+    </body>
+</html>
