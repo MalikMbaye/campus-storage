@@ -1,64 +1,29 @@
 
 <body data-spy="scroll">
-  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapspe-1" aria-expanded="false" aria-controls="#navbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar brand" href="{{ url_for('home') }}"><img src="https://lh3.googleusercontent.com/O_VOLmDROHp2JGR8X6q-ZyFSbt1oybahHx2VMl72ynnj5R6N1Hzo5-W52tLGlX5RiIz48QoFXcCXGoShR9qvCZXP8ys3mGsrV3KV_WlBORfXaK0UD9akOsJ7gMaw5s2Rh830BQ=w1198-h862-no" height="42" width="56">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar brand" href="{{ url_for('home') }}"><img src="https://lh3.googleusercontent.com/O_VOLmDROHp2JGR8X6q-ZyFSbt1oybahHx2VMl72ynnj5R6N1Hzo5-W52tLGlX5RiIz48QoFXcCXGoShR9qvCZXP8ys3mGsrV3KV_WlBORfXaK0UD9akOsJ7gMaw5s2Rh830BQ=w1198-h862-no" height="42" width="56">
                 </a>
-                </div>
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav"> 
-                        <li class="active"><a href="{{ url_for('home') }}">Home</a></li>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="{{ url_for('home') }}">Home<span class="sr-only">(current)</span></a></li>
                         <li><a href="{{ url_for('about') }}">About</a></li> 
                         <li><a href="{{ url_for('contact') }}">Contact</a></li> 
                         <li><a href="{{ url_for('faq') }}">FAQs</a></li>
                         <li><a href="{{ url_for('store') }}">Storage Request</a></li>
-                    </ul>
-                </div><!--/.nav-collapse -->
-            </div><!--/.container-fluid -->
-        </nav><!--navigation end here-->
-        
-        <script src="bower_components/aos/dist/aos.js"></script>
-        <script src="bower_components/jquery/dist/jquery.min.js"></script>
-        <script src="js/jquery-migrate.min.js" type="text/javascript"></script>
-        <script src="js/jquery.easing.1.3.min.js" type="text/javascript"></script>
-        <script src="js/jquery.scrollTo.min.js" type="text/javascript"></script>
-        <script src="bootstrap/js/bootstrap.min.js"></script>
-        <script src="bower_components/flexslider/jquery.flexslider-min.js"></script>
-        <script src="bower_components/wow/dist/wow.min.js"></script>
-        <script src="owl-carousel/owl.carousel.min.js" type="text/javascript"></script>
-        <script src="js/custom.js" type="text/javascript"></script>
-        <script src="video-background/core.js"></script>
-        <script src="video-background/transition.js"></script>
-        <script src="video-background/background.js"></script>
-        <script>
-            // Formstone Background - Video Background Settings
-            $(".video-section").background({
-                source: {
-                    poster: "images/cover.png",
-                    mp4: "images/MDCS1.mp4"
-                }
-            });
-        </script>
-        <script>
-    AOS.init();
-  </script>
-  <script>(function() {
-    var qs, js, q, s, d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://s3-eu-west-1.amazonaws.com/share.typeform.com/";
-    if(!gi.call(d, id)) {
-        js=ce.call(d, "script");
-        js.id=id;
-        js.src=b+"widget.js";
-        q=gt.call(d, "script")[0];
-        q.parentNode.insertBefore(js, q)
-    }
-}
-
-)()
-</script>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
       </body>
