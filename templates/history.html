@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% block header %}
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Top 10 Express Table Designs - Smashing Magazine Source</title>
+<style type="text/css">
+<!--
+@import url("style.css");
+-->
+</style>
+{% endblock %}
+{% block content %}
+<body>
+<div class="dummy1"></div>
+<div class="dummy1"></div>
+ <div class="center">
+<div class="container">
+              <h4>List of Previous Moves (Pulled from Database)</h4>
+             <div class="dummy2"></div>
+          </div>
+          </div>
+<div class="container">
+              <h4>I.D  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              NAME  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+              LOCATION  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PRICE  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+              ITEMS</h4>
+          </div>
+<div class="container center">
+<!-- <table id="background-image" summary="Meeting Results">
+    <thead>
+    	<tr>
+        	<th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Location</th>
+            <th scope="col">Price</th>
+            <th scope="col">Items</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for x in listings %}
+    	<tr>
+        	<td>{{ x.id }}</td>
+            <td>{{ x.name }}</td>
+            <td>{{ x.location }}</td>
+            <td>{{ x.price }}</td>
+            <td>{{ x.items }}</td>
+        </tr>
+        {% endfor %}
+        
+    </tbody>
+</table> -->
+<br>
+<div class="center">
+    <div class="row">
+        {% for x in listings %}
+        <div class="thumbnail">
+            <div class="caption">
+                {{ x.id }} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                {{ x.name }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                {{ x.location }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                {{ x.price }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                {{ x.items }}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+</div>
+<div class="dummy1"></div>
+<div class="dummy1"></div>
+
+</body>
+
+{% endblock %}            
+

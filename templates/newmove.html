@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="dummy1"></div>
+<div class="dummy1"></div>
+<div class="container center">
+{% for message in get_flashed_messages() %}
+      <div class="alert alert-warning" role="alert">{{ message }}</div>
+{% endfor %}
+<form method='POST'>
+    {{ form.csrf_token }}
+    <div class="form-group">
+        <label for="id">ID</label>
+    {{ form.id.label }} {{ form.id(size=10, class="form-control") }}
+    </div>
+    <div class="form-group">
+        <label for="name">Name</label>
+    {{ form.name.label }} {{ form.name(size=20, class="form-control") }}
+    </div>
+    <div class="form-group">
+        <label for="name">Location</label>
+    {{ form.location.label }} {{ form.location(size=20, class="form-control") }}
+    </div>
+    <div class="form-group">
+        <label for="name">Price</label>
+    {{ form.price.label }} {{ form.price(size=20, class="form-control") }}
+    </div>
+    <div class="form-group">
+        <label for="name">Items</label>
+    {{ form.items.label }} {{ form.items(size=20, class="form-control") }}
+    </div>
+    <button type="submit" class="btn btn-primary">Submit!</button>
+</form>
+</div>
+<div class="dummy1"></div>
+<div class="dummy1"></div>
+{% endblock %}
